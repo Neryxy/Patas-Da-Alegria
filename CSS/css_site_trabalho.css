@@ -10,7 +10,7 @@ body {
     background-color: rgb(254, 254, 254);
     color: rgb(51, 51, 51);
     padding-top: 240px; /* Espaço reservado para o header fixo */
-    background-image: url("../Imagens/BACKGROUND.png");
+    background-image: url("../IMAGENS/BACKGROUND.png");
     background-size: 10%;
 }
 
