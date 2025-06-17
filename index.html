@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
     <title>Patas da Alegria</title>
     <link rel="stylesheet" href="./CSS/css_site_trabalho.css">
@@ -13,6 +14,7 @@
             <h1>Bem vindos ao mundo da felicidade!</h1>
         </div>
 
+        <button class="menu-hamburguer" onclick="toggleMenu()" aria-label="Abrir menu">☰</button>
 
         <nav>
             <ul class="nav-list">
@@ -32,20 +34,15 @@
         </div>
     </section>
 
-    <div class="sobre">
-        <h1>Sobre Nós</h1>
-        <h4> 50 anos de amor e cuidado com seu pet!
-
-Desde 1974, o Patas da Alegria é mais do que um pet shop, somos uma família apaixonada por animais. Ao longo de cinco décadas, crescemos ao lado de tutores e seus melhores amigos, oferecendo carinho, atenção e serviços de qualidade.
-
-Aqui, cada banho, tosa e atendimento é feito com respeito à individualidade do seu pet. Nossa equipe é formada por profissionais experientes, que unem conhecimento e amor em tudo o que fazem.
-
-Usamos produtos de primeira linha, equipamentos modernos e o principal: cuidamos como se fosse nosso.
-
-Venha nos visitar e faça parte dessa história de confiança, dedicação e alegria. Seu pet merece o melhor, e a gente está aqui pra isso. 💜
-
-</h4>
-    </div>
+        <div class="sobre">
+                <h1>Sobre Nós</h1>
+                <h4>
+                    Desde 1974, o Patas da Alegria é mais do que um pet shop, somos uma família apaixonada por animais. Ao longo de cinco décadas, crescemos ao lado de tutores e seus melhores amigos, oferecendo carinho, atenção e serviços de qualidade.
+                    Aqui, cada banho, tosa e atendimento é feito com respeito à individualidade do seu pet.
+                    Usamos produtos de primeira linha, equipamentos modernos e o principal: cuidamos como se fosse nosso.
+                    Venha nos visitar e faça parte dessa história de confiança, dedicação e alegria. Seu pet merece o melhor, e a gente está aqui pra isso. 💜
+                </h4>
+        </div>
 
     <section id="servicos">
         <section id="banhos">
@@ -162,9 +159,9 @@ Venha nos visitar e faça parte dessa história de confiança, dedicação e ale
     <script>
         //Função Carrosel
         var contador = 1;
-		var img1="f:/1B-MODULAR/Lavinia e Luisa/Atividades/PET FELIZ FABRIZIO/Site Novo/IMAGENS/Carrosel/Carrosel_1.jpg";
-		var img2="f:/1B-MODULAR/Lavinia e Luisa/Atividades/PET FELIZ FABRIZIO/Site Novo/IMAGENS/Carrosel/Carrosel_2.webp";
-		var img3="f:/1B-MODULAR/Lavinia e Luisa/Atividades/PET FELIZ FABRIZIO/Site Novo/IMAGENS/Carrosel/Carrosel_3.webp";
+		var img1="./IMAGENS/Carrosel/Carrosel_1.jpg";
+		var img2="./IMAGENS/Carrosel/Carrosel_2.webp";
+		var img3="./IMAGENS/Carrosel/Carrosel_3.webp";
 		var tempo=1800;
 		var exibir=setInterval("Exibindo()",tempo);
 	  
@@ -193,6 +190,12 @@ Venha nos visitar e faça parte dessa história de confiança, dedicação e ale
         botao.addEventListener("click",function(){
             formulario.style.display = "block";
         });
+
+        //menu hamburguer
+            function toggleMenu() {
+        const menu = document.querySelector('.nav-list');
+        menu.classList.toggle('ativo');
+        }
     </script>
 </body>
 </html>
