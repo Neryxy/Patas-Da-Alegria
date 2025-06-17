@@ -244,10 +244,6 @@ button {
   cursor: pointer;
 }
 
-button:hover {
-  background-color: #163cc2;
-}
-
 .bloco {
   color: #000000;
   background-color: rgb(254, 215, 27);
