@@ -387,13 +387,12 @@ button:hover {
     flex-direction: column;
     background-color: #fdfdfd;
     position: absolute;
-    right: 20px;
     top:15px;
     bottom: 0px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     padding: 10px;
-    width: 200px;
+    width: 300px; 
     z-index: 2000;
     font-size: 10px;
   }
